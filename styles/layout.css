@@ -1,0 +1,143 @@
+/* CSS Document */
+section, header, article, nav {
+	display: block;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0 auto;
+  width:900px;
+  background-image: url(../images/background.gif);
+  background-attachment: fixed;  /*设置背景图像是否固定或者随着页面的其余部分滚动。*/
+  background-position: top left;  /*设置背景图像的开始位置。*/
+  background-repeat: repeat-x;  
+  max-width:100em;  /*对元素的宽度设置一个最高限制*/
+  
+}
+header {
+
+  background-image: url(../images/guitarist.gif);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  border-width: .1em;  /*简写0.1em*/
+  border-style: solid;
+  border-bottom-width: 0;
+}
+/*
+#himg{
+  border-width: 0;
+  margin-bottom:0;
+  padding-bottom:0;
+}
+*/
+header nav {
+  background-image:url(../images/navbar.gif);
+  background-position: bottom left;
+  background-repeat: repeat-x;
+  border-width: .1em;
+  border-style: solid;
+  border-bottom-width: 0;
+  border-top-width: 0;
+  padding-left: 10%;
+}
+header nav ul {
+  width: 100%;
+  overflow: hidden;  /*为什么要这个属性？？？？*/
+  border-left-width: .1em;
+  border-left-style: solid;
+}
+header nav li {
+  display: inline;
+}
+header nav li a {
+  display: block;
+  float: left;
+  padding: .5em 2em;
+  border-right: .1em solid;
+}
+article {
+  border-width: .1em;
+  border-style: solid;
+  border-top-width: 0;
+  padding: 2em 10%;
+  line-height: 1.8em;  /*行间距*/
+}
+article img {
+  border-width: .1em;
+  border-style: solid;
+  outline-width: .1em;
+  outline-style: solid;
+}
+
+
+#about header {
+  background-image: url(../images/lineup.gif);
+}
+#photos header {
+  background-image: url(../images/basshead.gif);
+}
+#live header {
+  background-image: url(../images/bassist.gif);
+}
+#contact header {
+  background-image: url(../images/drummer.gif);
+}
+
+
+#slideshow {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  overflow: hidden;
+}
+#preview {
+  position: absolute;
+  border-width: 0;
+  outline-width: 0;
+}
+
+#frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;  /*设置元素的堆叠顺序。拥有更高堆叠顺序的元素总是会处于堆叠顺序较低的元素的前面。*/
+  border-width: 0;
+  outline-width: 0;
+}
+
+
+#imagegallery li {
+  display: inline;
+}
+
+
+td {
+  padding: .5em 3em;
+}
+
+
+dl {
+  overflow: hidden;
+}
+dt {
+  float: left;
+}
+dd {
+  float: left;
+}
+
+
+label {
+  display: block;
+}
+fieldset {
+  border: 0;
+}
+
+
+
+
